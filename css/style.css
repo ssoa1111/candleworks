@@ -1,0 +1,613 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&family=Song+Myung&display=swap');
+/* font-family: 'Gothic A1', sans-serif;
+font-family: 'Song Myung', serif; */
+@font-face {
+    font-family: 'SEBANG_Gothic_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+img{
+    display: block;
+}
+
+#wrap{
+    display: flex;
+    flex-direction: column;
+    font-family: 'SEBANG_Gothic_Regular';
+    background: #F8EDEB;
+    overflow: hidden;
+}
+.hidden{
+    display: none;
+}
+.pc{
+    display: none;
+}
+.tab{
+    display: none;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(#F9E5D8, #FCD2AF);
+}
+header h1{
+    width: 50px;
+    padding: 25px 0;
+    margin: auto;
+}
+header nav .menu_btn{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    color: #9C8B7B;
+    cursor: pointer;
+    z-index: 10;
+}
+header nav .menu_btn.active{
+    left: 310px;
+}
+header nav .menu_btn span{
+    font-size: 3em;
+}
+header nav .menu_btn span.off{
+    display: none;
+}
+header nav .mobile .mobile__menu{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100vh;
+    background: #fff;
+    display: none;
+}
+header nav .mobile .mobile__menu.active{
+    width: 300px;
+    display: block;
+    transition: all 0.5s;
+}
+header nav .mobile .main{
+    width: 100%;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 5;
+}
+header nav .mobile .main li{
+    padding: 15px;
+    border-bottom: 1px solid #9C8B7B;
+    font-size: 0.875em;
+    cursor: pointer;
+}
+header nav .mobile .sub{
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    bottom: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.75em;
+    text-align: center;
+}
+header nav .mobile .sub li{
+    width: 20%;
+    margin-top: 5px;
+}
+header nav .mobile .mobile__bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+:root {
+    --swiper-theme-color : #9C8B7B !important;
+}
+.slider img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.new{
+    width: 100%;
+    padding: 20% 0 25%;
+}
+.new h2{
+    width: 100%;
+    font-family: 'Song Myung', serif;
+    font-size: 4.5vh;
+    text-align: center;
+}
+.new .new_item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.new .new_item li{
+    width: 100%;
+    background: #fff;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.new .new_item figure{
+    margin: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.new .new_item figure img{
+    width: 30%;
+}
+.new .new_item figure figcaption{
+    width: 70%;
+    padding-left: 3%;
+    display: flex;
+    flex-direction: column;
+}
+.new .new_item figure figcaption h3{
+    font-size: 4vw;
+    font-weight: bold;
+}
+.new .new_item figure:hover figcaption h3{
+    color: #9C8B7B;
+}
+.new .new_item figure figcaption p{
+    font-size: 2.5vw;
+    margin: 5% 0;
+    line-height: 2;
+}
+.new .new_item figure figcaption span{
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.delivery{
+    width: 100%;
+}
+.delivery img{
+    width: 110%;
+}
+
+.sale{
+    width: 100%;
+    height: 680px;
+    background: url(../image/sale/sale_moiblebg.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.sale .sale__text{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.sale .sale__text .title{
+    font-size: 5vw;
+    font-family: 'Song Myung', serif;
+}
+.sale .sale__text h2{
+    font-size: 7vw;
+    font-family: 'Song Myung', serif;
+    font-weight: bold;
+    margin: 10px 0 60px;
+}
+.sale .sale__text .sale_btn{
+    width: 150px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    font-size: 0.875em;
+    position: relative;
+}
+.sale .sale__text .sale_btn p, .sale .sale__text .sale_btn span{
+    position: relative;
+}
+.sale .sale__text .sale_btn::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 40px;
+    transition: all 0.5s;
+}
+.sale .sale__text .sale_btn:hover{
+    color: #fff;
+}
+.sale .sale__text .sale_btn:hover::before{
+    width: 100%;
+    background: #333;
+}
+
+.product{
+    width: 100%;
+    padding: 20% 0 170%;
+    position: relative;
+}
+.product .product__btn{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin:  2% auto;
+    padding: 0 10px;
+    background: #F9E5D8;
+}
+.product .product__btn li{
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+.product .product__btn li.active{
+    color: #9C8B7B;
+}
+.product .product__item{
+    position: relative;
+    height: 100%;
+}
+.product .product__item div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+.product .product__item div.active{
+    display: block;
+}
+.product .product__item .item__list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.product .product__item .item__list li{
+    width: 50%;
+    margin: 20px 0;
+}
+.product .product__item .item__list li p{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.product .more_btn{
+    width: 180px;
+    height: 40px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    font-size: 0.875em;
+    position: absolute;
+    bottom: 12%;
+    left: 0;
+    right: 0;
+    background: #333;
+    color: #fff;
+}
+.product .more_btn p, .product .more_btn span{
+    position: relative;
+}
+.product .more_btn::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 40px;
+    transition: all 0.5s;
+}
+.product .more_btn:hover{
+    color: #333;
+    border: 1px solid #333;
+}
+.product .more_btn:hover::before{
+    width: 100%;
+    background: #fff;
+}
+
+.social{
+    width: 100%;
+    background: #fff;
+    padding: 30px 0;
+}
+.social h2{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.social h2 img{
+    margin: auto;
+}
+.social ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.social ul li{
+    width: 32%;
+    margin: 0.5% 0;
+}
+
+footer{
+    width: 100%;
+}
+footer .footer_top, footer .footer_bottom{
+    border-top: 1px solid #ccc;
+}
+footer .footer_top .top__list > a{
+    font-family: 'Song Myung', serif;
+}
+footer .footer_top ul li{
+    padding: 10px;
+    text-indent: 15px;
+}
+footer .footer_top ul li:nth-child(even){
+    background: #F9E5D8;
+}
+footer .footer_bottom ul{
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .footer_bottom ul li{
+    font-size: 0.75em;
+    line-height: 1.5;
+    padding-right: 10px;
+    text-indent: 20px;
+}
+footer .footer_bottom p{
+    font-size: 0.875em;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+@media all and (min-width: 768px){
+    .tab{
+        display: block;
+    }
+    .new .new_item{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .new .new_item li{
+        width: 32%;
+        margin-top: 0;
+        align-items: normal;
+    }
+    .new .new_item figure{
+        flex-direction: column;
+    }
+    .new .new_item figure img{
+        width: 100%;
+    }
+    .new .new_item figure figcaption{
+        width: 100%;
+        padding-left: 0;
+        margin-top: 15px;
+    }
+    .new .new_item figure figcaption h3{
+        font-size: 2vw;
+        height: 10%;
+    }
+    .new .new_item figure figcaption p{
+        font-size: 1.2vw;
+        height: 60%;
+    }
+    .new .new_item figure figcaption span{
+        font-size: 1.7vw;
+        height: 10%;
+    }
+
+    .delivery{
+        background: url(../image/delivery/deliver_bg.jpg) no-repeat 50% fixed;
+        background-size: cover;
+        position: relative;
+    }
+    .delivery img{
+        width: 40%;
+    }
+    .delivery .delivery__text{
+        width: 310px;
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        color: #fff;
+    }
+    .delivery .delivery__text h2{
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .delivery .delivery__text p{
+        line-height: 1.5;
+    }
+    .sale{
+        background: url(../image/sale/sale_pcbg.png) no-repeat;
+    }
+    .sale .sale__text .title{
+        font-size: 2.5em;
+    }
+    .sale .sale__text h2{
+        font-size: 3em;
+        margin-top: 0;
+    }
+    .product{
+        padding: 12% 0 75%;
+    }
+    .product .product__item .item__list li{
+        width: 33%;
+    }
+    .product .more_btn{
+        bottom: 10%;
+    }
+
+    footer .footer_top .inner > ul{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    footer .footer_top .top__list{
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+    }
+    footer .footer_top .top__list a{
+        padding-bottom: 10px;
+    }
+    footer .footer_top .top__list:nth-child(1){
+        width: 22%;
+    }
+    footer .footer_top .top__list:nth-child(2){
+        width: 22%;
+    }
+    footer .footer_top .top__list:nth-child(3){
+        width: 18%;
+    }
+    footer .footer_top .top__list:nth-child(4),
+    footer .footer_top .top__list:nth-child(5),
+    footer .footer_top .top__list:nth-child(6){
+        width: 12.6666666667%;
+    }
+    footer .footer_top .top__list .tab .text--big{
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+    footer .footer_top ul li{
+        padding: 0;
+        text-indent: 0;
+        line-height: 1.5;
+    }
+    footer .footer_top .tab li{
+        font-size: 0.75em;
+    }
+    footer .footer_top ul li:nth-child(even){
+        background: none;
+    }
+    footer .footer_bottom ul{
+        width: 70%;
+    }
+    footer .footer_bottom p{
+        text-align: left;
+        text-indent: 20px;
+    }
+}
+
+@media all and (min-width : 1400px){
+    .mobile{
+        display: none;
+    }
+    .pc{
+        display: block;
+    }
+    .inner{
+        width: 1400px;
+        margin: auto;
+    }
+
+    header{
+        height: 150px;
+    }
+    header nav .pc .main{
+        display: flex;
+        margin-top: 30px;
+    }
+    header nav .pc .main .main_menu{
+        height: 50px;
+        padding: 0 20px;
+        position: relative;
+        z-index: 10;
+        margin: auto;
+        text-align: center;
+        font-size: 0.875em;
+        cursor: pointer;
+    }
+    header nav .pc .main .main__sub{
+        width: 100px;
+        position: absolute;
+        top: 45px;
+        left: 50%;
+        margin-left: -50px;
+        z-index: 5;
+        display: none;
+    }
+    header nav .pc .main .main__sub.active{
+        display: block;
+        height: 100%;
+        transition: all 0.5s;
+    }
+    header nav .pc .main .main__sub li{
+        padding: 10px 0;
+        text-align: center;
+        font-size: 0.75em;
+        background: #9C8B7B;
+    }
+    header nav .pc .main .main__sub li:hover{
+        background: #FCD2AF;
+    }
+    header nav .pc .sub{
+        position: absolute;
+        top: 10px;
+        right: 0;
+        display: flex;
+    }
+    header nav .pc .sub li{
+        font-size: 0.75em;
+    }
+    header nav .pc .sub li::after{
+        content: "|";
+        padding: 5px;
+    }
+    header nav .pc .sub li:last-child:after{
+        content: "";
+    }
+
+    .new{
+        padding: 10% 0 15%;
+    }
+    .new .new_item figure figcaption h3{
+        font-size: 1.5em;
+    }
+    .new .new_item figure figcaption p{
+        font-size: 1em;
+    }
+    .new .new_item figure figcaption span{
+        font-size: 1.2em;
+    }
+    .delivery img{
+        width: 30%;
+    }
+    .delivery .delivery__text{
+        left: 40%;
+    }
+    .product .product__item .item__list li p{
+        font-size: 1.25em;
+        padding: 20px 50px;
+    }
+    .product .product__btn{
+        padding: 0;
+    }
+    .social ul li{
+        filter: grayscale(100%);
+    }
+    .social ul li:hover{
+        filter: grayscale(0%)
+    }
+}
