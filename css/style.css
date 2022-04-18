@@ -236,7 +236,9 @@ header nav .mobile .mobile__bg{
 
 .product{
     width: 100%;
-    padding: 20% 0 170%;
+    height: 220vw;
+    max-height: 1200px;
+    padding: 20% 0;
     position: relative;
 }
 .product .product__btn{
@@ -295,7 +297,7 @@ header nav .mobile .mobile__bg{
     margin: auto;
     font-size: 0.875em;
     position: absolute;
-    bottom: 12%;
+    bottom: 5%;
     left: 0;
     right: 0;
     background: #333;
@@ -451,13 +453,14 @@ footer .footer_bottom p{
         margin-top: 0;
     }
     .product{
-        padding: 12% 0 75%;
+        height: 100vw;
+        padding: 10% 0;
     }
     .product .product__item .item__list li{
         width: 33%;
     }
     .product .more_btn{
-        bottom: 10%;
+        bottom: 15%;
     }
 
     footer .footer_top .inner > ul{
@@ -520,6 +523,7 @@ footer .footer_bottom p{
     .inner{
         width: 1400px;
         margin: auto;
+        position: relative;
     }
 
     header{
@@ -540,11 +544,11 @@ footer .footer_bottom p{
         cursor: pointer;
     }
     header nav .pc .main .main__sub{
-        width: 100px;
+        width: 120px;
         position: absolute;
         top: 45px;
         left: 50%;
-        margin-left: -50px;
+        margin-left: -60px;
         z-index: 5;
         display: none;
     }
@@ -564,8 +568,8 @@ footer .footer_bottom p{
     }
     header nav .pc .sub{
         position: absolute;
-        top: 10px;
-        right: 0;
+        top: -100px;
+        right: 10px;
         display: flex;
     }
     header nav .pc .sub li{
@@ -596,6 +600,15 @@ footer .footer_bottom p{
     }
     .delivery .delivery__text{
         left: 40%;
+    }
+    .product{
+        max-height: 1400px;
+    }
+    .product .inner{
+        height: 100%;
+    }
+    .product .more_btn{
+        bottom: 10%
     }
     .product .product__item .item__list li p{
         font-size: 1.25em;
