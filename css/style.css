@@ -8,6 +8,7 @@ font-family: 'Song Myung', serif; */
     font-weight: normal;
     font-style: normal;
 }
+/* 이미지 여백 없이 */
 img{
     display: block;
 }
@@ -29,6 +30,7 @@ img{
     display: none;
 }
 
+/* ////////////////header//////////////// */
 header{
     width: 100%;
     height: 80px;
@@ -39,6 +41,8 @@ header h1{
     padding: 25px 0;
     margin: auto;
 }
+/* ////////////////menu//////////////// */
+/* menu btn */
 header nav .menu_btn{
     position: absolute;
     top: 15px;
@@ -56,6 +60,7 @@ header nav .menu_btn span{
 header nav .menu_btn span.off{
     display: none;
 }
+/* menu list */
 header nav .mobile .mobile__menu{
     position: fixed;
     z-index: 2;
@@ -83,6 +88,7 @@ header nav .mobile .main li{
     font-size: 0.875em;
     cursor: pointer;
 }
+/* custom menu */
 header nav .mobile .sub{
     width: 100%;
     position: absolute;
@@ -115,6 +121,7 @@ header nav .mobile .mobile__bg{
     max-width: 100%;
 }
 
+/* ////////////////new item section//////////////// */
 .new{
     width: 100%;
     padding: 20% 0 25%;
@@ -169,6 +176,7 @@ header nav .mobile .mobile__bg{
     font-size: 3vw;
 }
 
+/* ////////////////delivery section//////////////// */
 .delivery{
     width: 100%;
 }
@@ -176,6 +184,7 @@ header nav .mobile .mobile__bg{
     width: 110%;
 }
 
+/* ////////////////sale section//////////////// */
 .sale{
     width: 100%;
     height: 680px;
@@ -202,6 +211,7 @@ header nav .mobile .mobile__bg{
     font-weight: bold;
     margin: 10px 0 60px;
 }
+/* button */
 .sale .sale__text .sale_btn{
     width: 150px;
     height: 40px;
@@ -234,6 +244,7 @@ header nav .mobile .mobile__bg{
     background: #333;
 }
 
+/* ////////////////product section//////////////// */
 .product{
     width: 100%;
     height: 220vw;
@@ -241,6 +252,7 @@ header nav .mobile .mobile__bg{
     padding: 20% 0;
     position: relative;
 }
+/* product menu */
 .product .product__btn{
     width: 100%;
     height: 50px;
@@ -257,6 +269,7 @@ header nav .mobile .mobile__bg{
 .product .product__btn li.active{
     color: #9C8B7B;
 }
+/* product list */
 .product .product__item{
     position: relative;
     height: 100%;
@@ -287,6 +300,7 @@ header nav .mobile .mobile__bg{
     font-weight: bold;
     line-height: 1.5;
 }
+/* more button */
 .product .more_btn{
     width: 180px;
     height: 40px;
@@ -324,6 +338,7 @@ header nav .mobile .mobile__bg{
     background: #fff;
 }
 
+/* ////////////////social section//////////////// */
 .social{
     width: 100%;
     background: #fff;
@@ -346,12 +361,14 @@ header nav .mobile .mobile__bg{
     margin: 0.5% 0;
 }
 
+/* ////////////////footer//////////////// */
 footer{
     width: 100%;
 }
 footer .footer_top, footer .footer_bottom{
     border-top: 1px solid #ccc;
 }
+/* footer menu */
 footer .footer_top .top__list > a{
     font-family: 'Song Myung', serif;
 }
@@ -362,6 +379,7 @@ footer .footer_top ul li{
 footer .footer_top ul li:nth-child(even){
     background: #F9E5D8;
 }
+/* footer detail */
 footer .footer_bottom ul{
     padding: 15px 0;
     display: flex;
