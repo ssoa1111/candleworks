@@ -45,10 +45,17 @@ new Swiper(".slider .mySwiper", {
 
 const productBtn = document.querySelectorAll('.product .product__btn li');
 const selectPage = document.querySelectorAll('.product .product__item div');
+console.log(selectPage)
 
 productBtn.forEach(function(item, index){
     item.addEventListener('click',()=>{
-        for(let i = 0; i < productBtn.length; i++){
+        // 이건 되고
+        // for(let i = 0; i < productBtn.length; i++){
+        //     productBtn[i].classList.remove('active');
+        //     selectPage[i].classList.remove('active');
+        // }
+        // 이건 왜 안됩니까
+        for(i in productBtn){
             productBtn[i].classList.remove('active');
             selectPage[i].classList.remove('active');
         }
