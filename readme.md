@@ -59,7 +59,7 @@ productBtn.forEach(function(item, index){
 for문을 for in함수로 변경해서 작성할 수도 있다.    
 > for in    
 (for 인자 in 배열){}    
-(= for(인자 = 0; 인자 < 배열.length; 인자++))
+(= for(인자 = 0; 인자 < 배열.length; 인자++))    
 객체.entries() : 객체의 [키,값]을 배열로 반환한다.    
 ```javascript
 // for(let i = 0; i < productBtn.length; i++){
